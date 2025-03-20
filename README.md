@@ -10,6 +10,10 @@ A comprehensive analysis of portfolio performance and survival based on differen
 ![alt text](annual_returns_comparison_clean.png "Title")
 
 
+
+![alt text](bonds_inflation_history.png "Title")
+
+
 THe table below is 50th percentile stats
 
 ARE INFLATION ADJUSTMENTS BEING APPLIED CORRECTLY?
