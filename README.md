@@ -4,7 +4,7 @@ A comprehensive analysis of portfolio performance and survival based on differen
 [//]: # ![alt text](portfolio_simulation_concurrent_Balanced_100sims_30years.mp4 "Title")
 
 
-![](portfolio_simulation_concurrent_Balanced_100sims_30years.mp4 "title)
+![](portfolio_simulation_concurrent_Balanced_100sims_30years.mp4 "title")
 
 | Strategy                  | Nominal End Balance   | Real End Balance   | Nominal Annual Return   | Real Annual Return   | Volatility   |   Sharpe Ratio |   Sortino Ratio | Max Drawdown   | Perpetual SWR   |
 |:--------------------------|:----------------------|:-------------------|:------------------------|:---------------------|:-------------|---------------:|----------------:|:---------------|:----------------|
