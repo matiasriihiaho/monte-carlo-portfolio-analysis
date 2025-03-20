@@ -9,3 +9,5 @@ A comprehensive analysis of portfolio performance and survival based on differen
 | Growth (40/60)            | €389.40               | €363.55            | 5.04%                   | 4.81%                | 10.01%       |       0.481327 |        0.444398 | -34.40%        | 3.81%           |
 | Aggressive Growth (20/80) | €509.29               | €475.22            | 6.19%                   | 5.96%                | 12.33%       |       0.485123 |        0.441193 | -42.78%        | 4.96%           |
 | Equity (0/100)            | €630.36               | €588.22            | 7.27%                   | 7.04%                | 14.94%       |       0.47302  |        0.421841 | -51.09%        | 6.04%           |
+
+![alt text](financial_metrics_comparison.png "Title")
