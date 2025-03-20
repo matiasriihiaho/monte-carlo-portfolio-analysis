@@ -1,6 +1,8 @@
 # monte-carlo-portfolio-analysis
 A comprehensive analysis of portfolio performance and survival based on different asset allocations, using historical data and Monte Carlo simulations. This project explores the relationship between fixed income, equity, inflation, and interest rates, evaluating various financial metrics to compare investment strategies.
 
+![alt text](portfolio_simulation_concurrent_Balanced_100sims_30years.mp4 "Title")
+
 | Strategy                  | Nominal End Balance   | Real End Balance   | Nominal Annual Return   | Real Annual Return   | Volatility   |   Sharpe Ratio |   Sortino Ratio | Max Drawdown   | Perpetual SWR   |
 |:--------------------------|:----------------------|:-------------------|:------------------------|:---------------------|:-------------|---------------:|----------------:|:---------------|:----------------|
 | Safe (80/20)              | €187.72               | €175.19            | 2.37%                   | 2.14%                | 7.42%        |       0.286934 |        0.290792 | -25.81%        | 1.14%           |
