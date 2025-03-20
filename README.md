@@ -3,7 +3,7 @@ A comprehensive analysis of portfolio performance and survival based on differen
 
 
 vid 
-<video src="./portfolio_simulation_concurrent_Balanced_100sims_30years.mp4" controls width="640" height="360"></video>
+<video src="portfolio_simulation_concurrent_Balanced_100sims_30years.mp4" controls></video>
 
 vid
 
