@@ -1,9 +1,51 @@
-# monte-carlo-portfolio-analysis
-A comprehensive analysis of portfolio performance and survival based on different asset allocations, using historical data and Monte Carlo simulations. This project explores the relationship between fixed income, equity, inflation, and interest rates, evaluating various financial metrics to compare investment strategies.
+# Introduction
 
+Asset allocation is one of the most critical decisions investors face. The traditional 60/40 portfolio (60% equities, 40% bonds) has long been considered a balanced approach, but does it still hold up in today’s market? What if an investor took a more aggressive or conservative stance?
 
+To answer these questions, I conducted a backtest on six different portfolio allocation strategies using 40 years of market data (1985-2025). To further stress-test these strategies, I ran 10,000 Monte Carlo simulations, capturing a wide range of historical market conditions, including periods of turmoil, bull markets, and bear markets.
+
+### Below is an animation of a Monte Carlo simulation illustrating both favorable and unfavorable outcomes for a balanced portfolio (50% bonds, 50% equities). Due to image size constraints, only 1,000 simulations are shown, while the performance metrics are based on 100,000 simulations.
 
 ![alt text](portfolio_simulation_concurrent_Balanced_100sims_30years.gif "Title")
+
+
+# Data & Methodology
+## Data Sources
+The dataset consists of historical market data covering fixed income, equities, inflation, and interest rates:
+ - Equities: MSCI World Index (large and mid-cap stocks from 23 developed markets)
+ - Fixed Income: FTSE World Government Bond Index (sovereign bonds from 20+ countries)
+ - Risk-Free Rate: 3-Month Treasury Bill (TB3MS) from the Federal Reserve
+ - Inflation: Consumer Price Index (CPI) from the Bureau of Labor Statistics
+ - Federal Funds Rate: Effective interest rate set by the Federal Reserve
+ - These asset classes provide global diversification across both stocks and bonds, modeling realistic investment options for a long-term investor.
+
+These asset classes provide global diversification across both stocks and bonds, modeling realistic investment options for a long-term investor.
+
+## Portfolio Strategies Tested
+The analysis includes six portfolio allocations, each with different stock/bond splits:
+ - Safe (80% bonds, 20% equities)
+ - Conservative (60% bonds, 40% equities)
+ - Balanced (50% bonds, 50% equities)
+ - Growth (40% bonds, 60% equities)
+ - Aggressive Growth (20% bonds, 80% equities)
+ - Equity-Only (100% equities)
+
+Portfolios are rebalanced annually to maintain their target allocation.
+
+## Monte Carlo Simulation Assumptions
+To test how portfolios perform under uncertainty, I used stochastic modeling with the following parameters:
+
+ - Starting Portfolio Balance: €100
+ - Withdrawal Rate: 4% (adjusted annually based on portfolio performance)
+ - Simulation Period: 30 years
+ - Number of Simulations: 10,000
+ - Portfolio Expense Ratio: 0.1%
+ - Rebalancing Frequency: Annual
+ - Sequence Risk Adjustment: Worst 2-year period first in some scenarios
+
+The Monte Carlo approach allows us to model a range of possible future outcomes, helping investors assess risk, retirement sustainability, and market downturn resilience.
+
+
 
 
 Comparrison of historical returns (bonds/equity) 
@@ -27,6 +69,19 @@ Asset Type Correlation Matrix
 
 
 new data
+
+Simulation summary
+
+| Strategy                  | Nominal End Balance   | Nominal Annual Return   | Volatility   | Max Drawdown   | Perpetual SWR   | Success   |
+|:--------------------------|:----------------------|:------------------------|:-------------|:---------------|:----------------|:----------|
+| Bonds (100/0)             | 141€                  | -0%                     | 9%           | -42%           | 1%              | 96%       |
+| Safe (80/20)              | 222€                  | 2%                      | 8%           | -31%           | 2%              | 99%       |
+| Conservative (60/40)      | 341€                  | 3%                      | 9%           | -32%           | 3%              | 99%       |
+| Balanced (50/50)          | 416€                  | 4%                      | 9%           | -35%           | 4%              | 98%       |
+| Growth (40/60)            | 498€                  | 4%                      | 11%          | -39%           | 4%              | 98%       |
+| Aggressive Growth (20/80) | 727€                  | 5%                      | 13%          | -47%           | 6%              | 96%       |
+| Equity (0/100)            | 1047€                 | 5%                      | 16%          | -55%           | 7%              | 94%       |
+
 
 
 expected annual return = mean. This is simply the arithmetic mean of returns, annualized
