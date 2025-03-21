@@ -64,7 +64,11 @@ To test how portfolios perform under uncertainty, I used stochastic modeling wit
 
 The Monte Carlo approach allows us to model a range of possible future outcomes, helping investors assess risk, retirement sustainability, and market downturn resilience.
 
+testing 
 
+![alt_text](financial_metrics_visual.png "Title")
+
+and here is some more data.. 
 
 Financial metrics comparrison
 ![alt text](annual_return_median.png "Title")
