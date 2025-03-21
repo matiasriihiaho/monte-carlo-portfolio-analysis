@@ -17,10 +17,12 @@ Bonds are a good protection againt inflation historically
 
 
 
-
+Financial metrics comparrison
 ![alt text](annual_return_median.png "Title")
 
-![alt text](Asset Type Correlation Matrix.png "Asset Type Correlation Matrix")
+
+Asset Type Correlation Matrix
+![alt text](Asset Type Correlation Matrix.png "Title")
 
 
 ------------------------------------- 
