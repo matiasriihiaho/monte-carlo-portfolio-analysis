@@ -22,12 +22,12 @@ Financial metrics comparrison
 
 
 Asset Type Correlation Matrix
-![alt text](Asset Type Correlation Matrix.png "Title")
+![alt text](Asset_Type_Correlation_Matrix.png "Title")
 
 
-------------------------------------- 
+
 new data
---------------------------------------
+
 
 expected annual return = mean. This is simply the arithmetic mean of returns, annualized
 CAGR is the geometric mean of returns It accounts for the compounding effect of returns
