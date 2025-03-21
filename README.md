@@ -1,12 +1,32 @@
-# Introduction
+# What 40 Years of Market Data Tell Us About Portfolio Strategies
 
-Asset allocation is one of the most critical decisions investors face. The traditional 60/40 portfolio (60% equities, 40% bonds) has long been considered a balanced approach, but does it still hold up in today’s market? What if an investor took a more aggressive or conservative stance?
+## Introduction  
 
-To answer these questions, I conducted a backtest on six different portfolio allocation strategies using 40 years of market data (1985-2025). To further stress-test these strategies, I ran 10,000 Monte Carlo simulations, capturing a wide range of historical market conditions, including periods of turmoil, bull markets, and bear markets.
+Investing in a well-diversified portfolio is a critical decision for long-term financial security. This analysis explores the historical performance of bonds and equities, highlighting their role in different economic conditions. Additionally, a Monte Carlo simulation is used to stress-test various portfolio allocation strategies, capturing a range of potential future outcomes.  
 
-### Below is an animation of a Monte Carlo simulation illustrating both favorable and unfavorable outcomes for a balanced portfolio (50% bonds, 50% equities). Due to image size constraints, only 1,000 simulations are shown, while the performance metrics are based on 100,000 simulations.
+### Bonds as an Inflation Hedge  
 
-![alt text](portfolio_simulation_concurrent_Balanced_100sims_30years.gif "Title")
+Historically, bonds have provided a safeguard against inflation. The first visualization below compares bond returns to U.S. inflation (measured by the Consumer Price Index). While bonds have generally helped preserve purchasing power, the last few years have been exceptionally challenging due to high inflation.  
+
+***![alt text](bonds_inflation_history.png "Title")***  
+
+### Historical Performance of Bonds and Equities (1985–2025)  
+
+The second visualization presents annual returns for bonds and equities from 1985 to 2025. Key statistics from this dataset include:  
+
+- **Equities**: Positive returns in **29 out of 41 years (71%)**  
+- **Fixed Income**: Positive returns in **30 out of 41 years (73%)**  
+- **Annualized Returns**:  
+  - **Equities**: **8.34%**  
+  - **Bonds**: **3.33%**  
+
+***![alt text](annual_returns_comparison_clean.png "Title")***  
+
+### Monte Carlo Simulation Overview  
+
+To further stress-test different portfolio strategies, I ran **10,000 Monte Carlo simulations**, capturing a wide range of historical market conditions, including periods of turmoil, bull markets, and bear markets. The visualization below shows a subset of **1,000** simulations due to image size constraints, while performance metrics are based on **100,000 simulations**.  
+
+***![alt text](portfolio_simulation_concurrent_Balanced_100sims_30years.gif "Title")***  
 
 
 # Data & Methodology
@@ -17,7 +37,6 @@ The dataset consists of historical market data covering fixed income, equities, 
  - Risk-Free Rate: 3-Month Treasury Bill (TB3MS) from the Federal Reserve
  - Inflation: Consumer Price Index (CPI) from the Bureau of Labor Statistics
  - Federal Funds Rate: Effective interest rate set by the Federal Reserve
- - These asset classes provide global diversification across both stocks and bonds, modeling realistic investment options for a long-term investor.
 
 These asset classes provide global diversification across both stocks and bonds, modeling realistic investment options for a long-term investor.
 
@@ -46,18 +65,7 @@ To test how portfolios perform under uncertainty, I used stochastic modeling wit
 The Monte Carlo approach allows us to model a range of possible future outcomes, helping investors assess risk, retirement sustainability, and market downturn resilience.
 
 
-
-
-Comparrison of historical returns (bonds/equity) 
-
-![alt text](annual_returns_comparison_clean.png "Title")
-
-
-Bonds are a good protection againt inflation historically
-
-![alt text](bonds_inflation_history.png "Title")
-
-
+--------------------------------------------------------------------------------------------------
 
 Financial metrics comparrison
 ![alt text](annual_return_median.png "Title")
