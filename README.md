@@ -253,10 +253,22 @@ These findings highlight the importance of diversification and risk management, 
 
 
 ### Risk-Adjusted Performance
+
 **Sharpe & Sortino Ratios**
 - Equity-heavy portfolios (100/0, 20/80) exhibit the highest risk-adjusted returns, achieving the best Sharpe and Sortino ratios.
 - Conservative strategies (80/20, 100/0 bonds) display lower risk-adjusted returns, reflecting their limited upside potential.
 - Balanced allocations (50/50, 60/40) offer a solid middle ground, balancing return potential and downside risk.
+
+| Strategy                  |   Sharpe Ratio (50th Percentile) |   Sortino Ratio (50th Percentile) |
+|:--------------------------|---------------------------------:|----------------------------------:|
+| Bonds (100/0)             |                        0.0673597 |                         0.0670241 |
+| Safe (80/20)              |                        0.285773  |                         0.287508  |
+| Conservative (60/40)      |                        0.433442  |                         0.419651  |
+| Balanced (50/50)          |                        0.467935  |                     **0.446126**  |
+| Growth (40/60)            |                        0.476374  |                         0.440628  |
+| Aggressive Growth (20/80) |                    **0.483023**  |                         0.439215  |
+| Equity (0/100)            |                        0.477635  |                         0.425862  |
+
 
 ### Volatility & Max Drawdown
  - **100% Bonds:** Lowest volatility but still experiences significant drawdowns in extreme scenarios.
