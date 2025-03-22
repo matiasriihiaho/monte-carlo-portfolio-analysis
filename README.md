@@ -99,20 +99,20 @@ Inflation, as measured by the Consumer Price Index, has remained relatively stab
 
 The Monte Carlo simulation highlights the trade-offs between risk and return across different portfolio allocations. More conservative strategies (higher bond allocation) exhibit **lower volatility and smaller drawdowns**, but also deliver **lower long-term returns**. In contrast, equity-heavy portfolios achieve **higher growth** but come with increased **volatility and drawdown risks**.  
 
-| Strategy                  | Nominal End Balance   | Nominal Annual Return   | Volatility   | Max Drawdown   | Perpetual SWR   | Success   |
-|:--------------------------|:----------------------|:------------------------|:-------------|:---------------|:----------------|:----------|
-| Bonds (100/0)             | 141€                  | 0%                      | 9%           | -42%           | 1%              | 96%       |
-| Safe (80/20)              | 222€                  | 2%                      | 8%           | -31%           | 2%              | 99%       |
-| Conservative (60/40)      | 341€                  | 3%                      | 9%           | -32%           | 3%              | 99%       |
-| Balanced (50/50)          | 416€                  | 4%                      | 9%           | -35%           | 4%              | 98%       |
-| Growth (40/60)            | 498€                  | 4%                      | 11%          | -39%           | 4%              | 98%       |
-| Aggressive Growth (20/80) | 727€                  | 5%                      | 13%          | -47%           | 6%              | 96%       |
-| Equity (0/100)            | 1047€                 | 5%                      | 16%          | -55%           | 7%              | 94%       |
+| Strategy                  | Nominal End Balance (€)   | Nominal Annual Return (%)   | Volatility (%)   |   Sharpe Ratio |   Sortino Ratio | Max Drawdown (%)   | Perpetual SWR (%)   |
+|:--------------------------|:--------------------------|:----------------------------|:-----------------|---------------:|----------------:|:-------------------|:--------------------|
+| Bonds (100/0)             | €115.66                   | 0.80%                       | 8.00%            |      0.0673597 |       0.0670241 | -34.27%            | 0.06%               |
+| Safe (80/20)              | €187.61                   | 2.36%                       | 7.42%            |      0.285773  |       0.287508  | -25.91%            | 1.71%               |
+| Conservative (60/40)      | €281.85                   | 3.79%                       | 8.21%            |      0.433442  |       0.419651  | -27.35%            | 3.25%               |
+| Balanced (50/50)          | €332.86                   | 4.42%                       | 9.03%            |      0.467935  |       0.446126  | -30.82%            | 3.96%               |
+| Growth (40/60)            | €386.04                   | 5.01%                       | 10.03%           |      0.476374  |       0.440628  | -34.71%            | 4.63%               |
+| Aggressive Growth (20/80) | €507.24                   | 6.19%                       | 12.34%           |      0.483023  |       0.439215  | -42.74%            | 5.96%               |
+| Equity (0/100)            | €640.18                   | 7.33%                       | 14.94%           |      0.477635  |       0.425862  | -51.41%            | 7.28%               |
+
 
 ### Key Takeaways:
 - **Higher equity allocations** lead to **higher returns**, but also increase **volatility and drawdowns**.
 - **Balanced strategies (50/50 or 60/40)** offer a **good mix of stability and growth** with high success rates.
-- **All portfolios have high success rates (>94%)**, with bonds providing **more stability but limited upside**.
 - **Perpetual Safe Withdrawal Rates (SWR)** increase with equity exposure, supporting higher spending over time.
 
 These findings set the stage for a deeper dive into strategy performance, risk-adjusted returns, and the implications for long-term portfolio management.
@@ -255,9 +255,10 @@ These findings highlight the importance of diversification and risk management, 
 ### Risk-Adjusted Performance
 
 **Sharpe & Sortino Ratios**
-- Equity-heavy portfolios (100/0, 20/80) exhibit the highest risk-adjusted returns, achieving the best Sharpe and Sortino ratios.
-- Conservative strategies (80/20, 100/0 bonds) display lower risk-adjusted returns, reflecting their limited upside potential.
-- Balanced allocations (50/50, 60/40) offer a solid middle ground, balancing return potential and downside risk.
+ - Aggressive Growth (20/80) strategy exhibits the highest risk-adjusted return, achieving the best Sharpe ratio (0.483) and a strong Sortino ratio (0.439).
+ - Balanced and growth-oriented strategies (40/60, 50/50, 60/40) provide a solid middle ground, offering competitive Sharpe and Sortino ratios while balancing return potential and downside risk.
+ - The Equity-heavy (0/100) portfolio no longer holds the top position, as its Sharpe and Sortino ratios are slightly lower than some more diversified approaches.
+ - Conservative and bond-heavy strategies (80/20, 100/0) exhibit significantly lower risk-adjusted returns, reflecting their limited upside potential despite lower volatility.
 
 | Strategy                  |   Sharpe Ratio (50th Percentile) |   Sortino Ratio (50th Percentile) |
 |:--------------------------|---------------------------------:|----------------------------------:|
