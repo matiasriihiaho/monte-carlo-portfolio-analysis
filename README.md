@@ -117,6 +117,22 @@ The Monte Carlo simulation highlights the trade-offs between risk and return acr
 
 These findings set the stage for a deeper dive into strategy performance, risk-adjusted returns, and the implications for long-term portfolio management.
 
+## Annualized Nominal Returns  
+
+| Strategy                  | Pessimistic Scenario (≤25th Percentile)   | Expected Outcome (25th-75th Percentile)   | Optimistic Scenario (≥75th Percentile)   |
+|:--------------------------|:------------------------------------------|:------------------------------------------|:-----------------------------------------|
+| Bonds (100/0)             | -9.90% - -1.37%                           | -1.37% - 2.48%                            | 2.48% - 4.61%                            |
+| Safe (80/20)              | -3.04% - 0.60%                            | 0.60% - 3.89%                             | 3.89% - 5.82%                            |
+| Conservative (60/40)      | -2.05% - 1.93%                            | 1.93% - 5.42%                             | 5.42% - 7.40%                            |
+| Balanced (50/50)          | -1.86% - 2.40%                            | 2.40% - 6.12%                             | 6.12% - 8.29%                            |
+| Growth (40/60)            | -2.65% - 2.80%                            | 2.80% - 6.82%                             | 6.82% - 9.21%                            |
+| Aggressive Growth (20/80) | -5.49% - 3.50%                            | 3.50% - 8.39%                             | 8.39% - 10.96%                           |
+| Equity (0/100)            | -14.16% - 4.00%                           | 4.00% - 9.81%                             | 9.81% - 12.86%                           |
+
+### Conclusion:
+Portfolios with higher equity allocation exhibit greater growth potential but come with increased downside risk. Conservative strategies mitigate losses but may limit long-term gains.
+
+
 
 ## Success Rates Over Time  
 
@@ -236,12 +252,6 @@ The Monte Carlo simulation reveals significant differences in drawdown risk acro
 These findings highlight the importance of diversification and risk management, especially for investors relying on portfolio withdrawals.
 
 
-## Maximum Drawdown Analysis
-
-The risk-return trade-off is evident across different portfolio allocations. Equity-heavy strategies provide higher expected returns but at the cost of increased volatility, while conservative allocations offer stability with limited upside.
-
-*** ![alt_text](financial_metrics_visual.png "Title")*** 
-
 ### Risk-Adjusted Performance
 **Sharpe & Sortino Ratios**
 - Equity-heavy portfolios (100/0, 20/80) exhibit the highest risk-adjusted returns, achieving the best Sharpe and Sortino ratios.
@@ -253,6 +263,9 @@ The risk-return trade-off is evident across different portfolio allocations. Equ
  - **Balanced strategies (50/50, 60/40):** Offer moderate drawdowns while maintaining reasonable upside potential.
  - **100% Equity:** Highest volatility and deepest drawdowns, but also the highest growth potential.
 
+The risk-return trade-off is evident across different portfolio allocations. Equity-heavy strategies provide higher expected returns but at the cost of increased volatility, while conservative allocations offer stability with limited upside.
+
+![alt_text](financial_metrics_visual.png "Title") 
 
 
 ### nominal balance by year (50th percentile)
